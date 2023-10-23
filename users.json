@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Snehvide",
+    "FilmForBoern": [
+      "Ja",
+      "Nej"
+    ],
+    "image": "snehvide.jpg",
+    "laengde": "1t 20min",
+    "HvemErMed": {
+      "Skuespiller 1": "Lars",
+      "Skuespiller 2": "Bent"
+    }
+  },
+  {
+    "name": "The Nun 2",
+    "FilmForBoern": [
+      "Ja",
+      "Nej"
+    ],
+    "image": "snehvide.jpg",
+    "laengde": "1t 20min",
+    "HvemErMed": {
+      "Skuespiller 1": "Lene",
+      "Skuespiller 2": "Charlie"
+    }
+  }
+]

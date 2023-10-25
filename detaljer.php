@@ -42,36 +42,36 @@ foreach ($filmBillede as $billede){
 foreach ($film as $info){
 ?>
 <div class="row d-flex justify-content-evenly">
-<div class="card-group" style="width: 18rem;">
-    <img class="card-img-top" src="uploads/<?php echo $billede->filmBillede; ?>" alt="Kort">
+<div class="card-group" style="width: 40rem;">
+    <img class="card-img-top" style="max-height: 25rem; object-fit: contain" src="uploads/<?php echo $billede->filmBillede; ?>" alt="Kort">
     <div class="card-body">
 
 
         <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens Navn: </p><br><h2><?php
             echo $info->filmnavn
             ?></h2></div>
-        <div class="col-12 border-bottom pb-3">Filmgenre: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens genre: </p><br><?php
             echo $info->filmgenre
             ?></div>
-        <div class="col-12 border-bottom pb-3">Filmbeskrivelse: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Film Beskrivelse: </p><br><?php
             echo $info->filmbeskrivelse
             ?></div>
-        <div class="col-12 border-bottom pb-3">Fun facts: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Film Fun Fact: </p><br><?php
             echo $info->filmfunfact
             ?></div>
-        <div class="col-12 border-bottom pb-3">Filmens længde: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens Længde: </p><br><?php
             echo $info->filmlaengde
             ?></div>
-        <div class="col-12 border-bottom pb-3">Producer: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens producer: </p><br><?php
             echo $info->filmproducer
             ?></div>
-        <div class="col-12 border-bottom pb-3">Medvirkende: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens stjerner: </p><br><?php
             echo $info->filmstjerner
             ?></div>
-        <div class="col-12 border-bottom pb-3">Release Dato: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens Udgivelsesdato: </p><br><?php
             echo $info->filmrelease
             ?></div>
-        <div class="col-12 border-bottom pb-3">Filmhistorie: <br><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens Storyline: </p><br><?php
             echo $info->filmstoryline
             ?></div>
 
@@ -82,7 +82,7 @@ foreach ($film as $info){
 }
 ?>
 
-<a href="index.php"><h4 class="d-flex justify-content-center p-2">Tilbage til filmoversigten</h4></a>
+<a href="index.html"><h4 class="d-flex justify-content-center p-2">Tilbage til filmoversigten</h4></a>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

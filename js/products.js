@@ -37,7 +37,9 @@ export default class  Products {
 
             col.innerHTML = `
                 <div class="card">                 
-                    <img src="uploads/${item.filmBillede}" class="card-img-top" alt="FilmPlakat">                   
+                    <a href="detaljer.php?filmid=${item.filmid}"> 
+                        <img src="uploads/${item.filmBillede}" class="card-img-top" alt="FilmPlakat">
+                    </a>                    
                     <div class="card-body">
                         <h5 class="card-title">${item.filmnavn}</h5>
                         <p class="beskrivelse">${item.filmbeskrivelse}</p>

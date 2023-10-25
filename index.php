@@ -33,7 +33,7 @@ foreach ($film as $movie){
         </div>
         <div class="col-12 col-md-6">
             <?php
-            echo number_format($movie->filmlaengde, 2, ",", ".")
+            echo ($movie->filmlaengde, 2, ",", ".")
             ?>
         </div>
     </div>

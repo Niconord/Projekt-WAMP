@@ -30,9 +30,7 @@ if (!empty($_POST["data"])) {
     exit;
 
 }
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="da">
@@ -49,6 +47,17 @@ if (!empty($_POST["data"])) {
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://cdn.tiny.cloud/1/sukhkz3zmnkup81prn7lr2mudda6ow0dgpkl7yc293kv8ib3/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+
+    <script>
+        tinymce.init({
+            selector: '#filmBeskrivelseEdit'
+        });
+    </script>
+
 </head>
 
 <body>
@@ -113,17 +122,22 @@ if (!empty($_POST["data"])) {
                 <input class="form-control" type="text" name="data[filmfunfact]" id="filmfunfact" placeholder="Filmens fun facts" value="">
             </div>
         </div>
-        <div class="col-12">
-            <div class="form-group">
-                <label for="">Ekstra kommentar</label>
-                <textarea class="form-control" name="data[]" id="filmbeskrivelse"></textarea>
-            </div>
-        </div>
+
+        <h1>TinyMCE</h1>
+        <form method="post">
+            <textarea id="filmBeskrivelseEdit">Indsæt information her</textarea>
+        </form>
+
+
         <div class="col-12 col-md-6 offset-md-6">
             <button class="form-control btn btn-primary" type="submit" id="btnSubmit">Gem din film her</button>
         </div>
     </div>
 </form>
+
+
+
+
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

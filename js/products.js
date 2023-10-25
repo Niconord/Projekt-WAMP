@@ -36,11 +36,11 @@ export default class  Products {
             col.classList.add('col-md-6', 'col-lg-4', 'col-xl-3');
 
             col.innerHTML = `
-                <div class="card">
-                    <img src="uploads/${item.filmBillede}" class="card-img-top">
+                <div class="card">                 
+                    <img src="uploads/${item.filmBillede}" class="card-img-top" alt="FilmPlakat">                   
                     <div class="card-body">
                         <h5 class="card-title">${item.filmnavn}</h5>
-                        <p class="card-text">${item.filmbeskrivelse}</p>
+                        <p class="beskrivelse">${item.filmbeskrivelse}</p>
                         <a href="detaljer.php?filmid=${item.filmid}" class="btn btn-primary text-white w-100">Læs mere her</a>
                     </div>
                 </div>

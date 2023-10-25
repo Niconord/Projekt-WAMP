@@ -8,6 +8,8 @@ if (isset($_GET['filmid'])) {
 
     $filmBillede = $db->sql("SELECT filmBillede FROM film WHERE filmid = $valgtFilmID");
     $film = $db->sql("SELECT * FROM film WHERE filmid = $valgtFilmID");
+
+
 }
 ?>
 
@@ -31,6 +33,7 @@ if (isset($_GET['filmid'])) {
 <?php
 foreach ($filmBillede as $billede){
 ?>
+
 <?php
 }
 ?>
@@ -43,11 +46,8 @@ foreach ($film as $info){
     <img class="card-img-top" src="uploads/<?php echo $billede->filmBillede; ?>" alt="Kort">
     <div class="card-body">
 
-        <?php
-        $sql = "SELECT * FROM film WHERE filmid = 8";
 
-        ?>
-        <div class="col-12 border-bottom pb-3">Filmens Navn: <br><h2><?php
+        <div class="col-12 border-bottom pb-3"><p class="OverInfoContainer">Filmens Navn: </p><br><h2><?php
             echo $info->filmnavn
             ?></h2></div>
         <div class="col-12 border-bottom pb-3">Filmgenre: <br><?php
@@ -82,7 +82,7 @@ foreach ($film as $info){
 }
 ?>
 
-<a href="index.php">Tilbage til oversigt</a>
+<a href="index.php"><h4 class="d-flex justify-content-center p-2">Tilbage til filmoversigten</h4></a>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 

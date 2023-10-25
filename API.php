@@ -33,6 +33,6 @@ if(isset($data["password"]) && $data["password"] == "GlenKim") {
     echo json_encode($error);
 }
 
-?>
+
 
 

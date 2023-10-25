@@ -30,12 +30,6 @@ foreach ($film as $movie){
             <?php
             echo $movie->filmnavn
             ?>
-        </div>
-        <div class="col-12 col-md-6">
-            <?php
-            echo ($movie->filmlaengde, 2, ",", ".")
-            ?>
-        </div>
     </div>
     <?php
 }

@@ -61,6 +61,14 @@ if (!empty($_POST["data"])) {
 </head>
 
 <body>
+<div class="container-fluid">
+    <div class="row bg-secondary text-white pb-1">
+        <div class="col-12 header d-flex justify-content-center">
+            <h4>Indsæt film til databasen</h4>
+        </div>
+    </div>
+</div>
+
 
 <form method="post" action="insert.php" enctype="multipart/form-data">
     <div class="row">
@@ -125,7 +133,7 @@ if (!empty($_POST["data"])) {
 
         <h1>TinyMCE</h1>
         <form method="post">
-            <textarea id="filmBeskrivelseEdit">Indsæt information her</textarea>
+            <textarea id="filmBeskrivelseEdit">Indsæt information og yderligere styling her</textarea>
         </form>
 
 

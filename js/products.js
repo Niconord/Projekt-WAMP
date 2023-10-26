@@ -62,7 +62,7 @@ export default class  Products {
     }
 
     async getData(){
-        this.data.nameSearch = this.nameSearch.value;
+        this.data.nameSearch = this.nameSearch.value.length >= 3 ? this.nameSearch.value : '';
 
 
         const response = await fetch('api.php', {
